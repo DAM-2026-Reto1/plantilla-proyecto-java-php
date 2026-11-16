@@ -1,18 +1,121 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+# ==============================================================================
+# 1. ARCHIVOS DEL SISTEMA OPERATIVO
+# ==============================================================================
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
 
-# Other files and folders
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+.directory
+
+
+# ==============================================================================
+# 2. EDITORES E IDEs (VS Code, IntelliJ IDEA, Eclipse, NetBeans)
+# ==============================================================================
+# Visual Studio Code (PHP)
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# IntelliJ IDEA (Java)
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Eclipse (Java)
+.metadata/
 .settings/
+.classpath
+.project
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
+# NetBeans (Java)
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+
+# ==============================================================================
+# 3. JAVA (Compilados, Maven y Gradle)
+# ==============================================================================
+# Archivos compilados y empaquetados
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Logs de la máquina virtual de Java
+hs_err_pid*
+replay_pid*
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+
+# ==============================================================================
+# 4. PHP Y COMPOSER
+# ==============================================================================
+# Dependencias de Composer (nunca se suben, se instalan con 'composer install')
+/vendor/
+vendor/
+
+# Caché y logs de PHP
+.phpunit.result.cache
+.php-cs-fixer.cache
+*.log
+
+# Carpeta típica de recursos frontend si usan npm en la parte PHP
+node_modules/
+
+
+# ==============================================================================
+# 5. VARIABLES DE ENTORNO Y CONFIGURACIÓN LOCAL (¡MUY IMPORTANTE!)
+# ==============================================================================
+# Evita que los alumnos suban contraseñas de bases de datos o API keys
+.env
+.env.local
+.env.*.local
+*.local
+application-local.properties
+application-local.yml
